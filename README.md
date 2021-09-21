@@ -1,5 +1,16 @@
 # Welcome! Who am I
 
+## Tech
+현재 모바일 앱 개발을 주로 하고 있어요.
+
+- [Swift] - RxSwift
+- [Objective-C] - 
+- [Android] - Java, RxJava2
+- [React-Native] - RN0.9 
+- [React.JS] - v11
+- [node.js] - 
+- [jQuery] - 크레듀 날나리 영어회화 WEB
+
 ### Hi there 👋
 
 <!--
