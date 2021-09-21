@@ -14,7 +14,7 @@
 - [node.js] - 
 - [jQuery] - 크레듀 날나리 영어회화 WEB
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=iamjeffrey=compact)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=iamjeffrey&layout=compact)
 
 ### Hi there 👋
 
