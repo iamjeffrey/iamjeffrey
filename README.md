@@ -1,9 +1,10 @@
 # Welcome! Who am I
 
+현재 모바일 앱 개발을 주로 하고 있어요.
+
  ![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/iamjeffrey) ![Hits](https://img.shields.io/github/followers/iamjeffrey?label=Follow)
                                                 
-## Tech
-현재 모바일 앱 개발을 주로 하고 있어요.
+## 기술스택
 
 - [Swift] - RxSwift
 - [Objective-C] - 
@@ -12,6 +13,8 @@
 - [React.JS] - v11
 - [node.js] - 
 - [jQuery] - 크레듀 날나리 영어회화 WEB
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=iamjeffrey=compact)
 
 ### Hi there 👋
 
