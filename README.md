@@ -17,7 +17,10 @@
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=iamjeffrey&layout=compact)
 
-### Hi there 👋
+## 캐리어
+| **Type** | **Date** | **Contents** | **Oragnization** |
+|:--------:|:--------:|:--------:|:--------:|
+| *Education* | 2002.3 | 소프트웨어 전공 | 서일대학 |
 
 <!--
 **iamjeffrey/iamjeffrey** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
