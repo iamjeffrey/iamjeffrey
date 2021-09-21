@@ -1,6 +1,6 @@
 # Welcome! Who am I
 
-:bowtie: 현재 모바일 앱 개발을 주로 하고 있어요.
+:bowtie: 현재 모바일 앱 개발을 하고 있어요.
 
  ![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/iamjeffrey) ![Hits](https://img.shields.io/github/followers/iamjeffrey?label=Follow)
 
