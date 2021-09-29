@@ -21,11 +21,37 @@
 |:--------:|:--------:|:--------:|:--------:|
 | *Develop* | 2002~ |  | --- |
 
-## iOS Development 
-# XCode
+# iOS Development 
+## XCode Tips
 - Xcode 가끔 빌드 에러 문제 발생 할때 ‘~/Library/Developer/Xcode/DerivedData’ 아래 폴더를 모두 삭제한다.
 
-
+## Folder
+- Classes
+   + Core
+   + Utilities
+   + Controllers
+   + Managers
+   + Views
+   + Models
+   + ViewModels
+   
+- Resources
+ + Asserts
+ + XIBs
+ + Storyboards
+ 
+ ## Coordinator 패턴 Folder
+ MVVM 패턴에서는 위에 Folder구조를 추천 하지만, 개인적으로 비즈니스 폴더 아래에 모델, 뷰모델, 컨트롤러가 같이 있는게 구분하기 편한 것 같습니다.
+ 
+ - Classes
+   + Coordinator
+     + Coordinators
+   + Scenes
+     + Business Folder
+       + Model
+       + ViewModel
+       + Controller
+ 
 <!--
 **iamjeffrey/iamjeffrey** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
