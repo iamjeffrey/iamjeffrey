@@ -7,21 +7,23 @@
 
 ## 기술스택
 
-- [Swift] - RxSwift
-- [Objective-C] - 
+- [iOS] - Swift, RxSwift, Objective-C
 - [Android] - Java, RxJava2
-- [Spring Boot]
+- [Backend] - Spring boot, node.js
 - [React-Native] - RN0.9 
 - [React.JS] - v11
-- [node.js] - 
-- [jQuery] - 크레듀 날나리 영어회화 WEB
+- [Script] - javascript, jQuery, python 
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=iamjeffrey&layout=compact)
 
 ## 캐리어
 | **Type** | **Date** | **Contents** | **Oragnization** |
 |:--------:|:--------:|:--------:|:--------:|
-| *Develop* | 2002.3 | 소프트웨어 전공 | --- |
+| *Develop* | 2002~ |  | --- |
+
+## iOS Development 
+- Xcode 가끔 빌드 에러 문제 발생 할때 ‘~/Library/Developer/Xcode/DerivedData’ 아래 폴더를 모두 삭제한다.
+
 
 <!--
 **iamjeffrey/iamjeffrey** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
