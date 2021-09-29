@@ -1,6 +1,6 @@
 # Welcome! Who am I
 
-:bowtie: 현재 모바일 앱 개발을 하고 있어요.
+:bowtie: 모바일 앱 개발
 
  ![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/iamjeffrey) ![Hits](https://img.shields.io/github/followers/iamjeffrey?label=Follow)
 
@@ -10,6 +10,7 @@
 - [Swift] - RxSwift
 - [Objective-C] - 
 - [Android] - Java, RxJava2
+- [Spring Boot]
 - [React-Native] - RN0.9 
 - [React.JS] - v11
 - [node.js] - 
@@ -20,7 +21,7 @@
 ## 캐리어
 | **Type** | **Date** | **Contents** | **Oragnization** |
 |:--------:|:--------:|:--------:|:--------:|
-| *Education* | 2002.3 | 소프트웨어 전공 | 서일대학 |
+| *Develop* | 2002.3 | 소프트웨어 전공 | --- |
 
 <!--
 **iamjeffrey/iamjeffrey** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
