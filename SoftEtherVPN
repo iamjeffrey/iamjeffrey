@@ -1,9 +1,11 @@
 
-
+한국 설명 잘해 놓으신 블로그
 //http://gotocloud.co.kr/?p=1371
+
 
 - SoftEtherVPN TCP Packet
 // SoftEtherVPN/src/Cedar/Logging.c
+
 <Date>,<Time>,<Source session>,<Destination session>,
 <Source MAC address>,<Destination MAC address>,<MAC protocol>,
 <Packet size>,<Type of packet>,<TCP Flags(Control Bits)>,
@@ -11,5 +13,6 @@
 <Destination Port>,<TCP Sequence Number>,<TCP ACK Number>,
 <TCP window size and Meta Info>,<Packet Data>,
 <Physical IP address(Source)>,< Physical IP address(Destination)>
+
 
 
