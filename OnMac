@@ -25,3 +25,15 @@ ifconfig et[X] | grep 'inet ' | sed -e 's/:/ /' | awk '{print "ip       : " $2}'
 - Local ip
 ifconfig lo0 | grep 'inet ' | sed -e 's/:/ /' | awk '{print "lo0       : " $2}'
 
+- Clean user prompt
+기본 
+PS1="%n@%m %~ %# "
+  --> 유저명@컴퓨터이름 ~ % 
+PS1="%n@ %~ %# "
+  --> 유저명@ ~ % [caret]
+PS1="%n@ %1~ "
+  --> 유저명@ ~ [caret]
+
+
+
+
