@@ -1,0 +1,11 @@
+Windows 10 ~ 배터리 진단 방법
+* Command prompt
+
+1) powercfg.exe -energy
+   배터리 전원 효율성 진단 보고서 energy-report.html
+
+2) powercfg/batteryreport
+  배터리 상태, 사용 시간 등 보고서 battery-report.html
+
+- 노트북 제품 기기 정보 확인 Command
+  wmic csproduct
