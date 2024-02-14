@@ -1,0 +1,27 @@
+
+## Z shell
+- Available shells
+grep '^[^#]' /etc/shells
+
+- Default shell
+echo $SHELL
+  --> /bin/zsh
+
+- 마운트 드라이드 정보 보기
+(echo "DEVICE PATH TYPE FLAGS" && mount | awk '$2="";1') | column -t
+
+- Hidden file ls
+ls -a | egrep "^\."
+
+- IP address
+ipconfig | grep "^en"
+  --> enX: flags=xxxx<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500 
+      ...
+      enX: flags=xxxx<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500 
+
+ifconfig et[X] | grep 'inet ' | sed -e 's/:/ /' | awk '{print "ip       : " $2}'
+  --> ip       : 26.2.105.213
+
+- Local ip
+ifconfig lo0 | grep 'inet ' | sed -e 's/:/ /' | awk '{print "lo0       : " $2}'
+
