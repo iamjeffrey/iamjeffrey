@@ -1,0 +1,128 @@
+
+git log -p -2
+git log --stat
+git log --graph
+git log --pretty=oneline
+git log --pretty=format: "%T - %an, %cb, %cr"
+git log --oneline --decorate   브랜치가 어떤 커밋을 가리키는지 확인 가능
+git log --oneline --decorate --graph --all
+
+git branch --merged		Merge 한 브랜치
+git branch --no-merged  Merge 하지 않은 브랜치
+Merge 하지 않은 커밋을 담고 있는 브랜치는 삭제 할 수 없다
+git branch -d testing   -> 강제 삭제 -D option
+
+리모트 Refs는 리모트 저장소에 있는 포인터인 레퍼런스
+git ls-remote [remote] 리모트의 모든 Refs 조회
+
+git 검색
+git grep -n <문자열 | Rex>    --line-number(-n) 문자열 위치 라인 번호
+grep 옵션
+	-c | --count    어떤 파일에 몇 개나 있는지
+	-p | --show-function  매칭되는 라인이 있는 함수나 메소드 검색
+
+git grep -n --break --heading time *.java  *.java에서 time 검색하고 읽기 쉬운 형태로 출력
+	
+git status
+
+git commit --amend
+
+Staging Area에 들어간 상태를 Unstage로 변경
+git status 결과에서 
+Chanages to be commited ..
+git reset HEAD <file name>
+
+// HEAD가 Checkout 한 브랜치로 이동 (Checkout한 브랜치가 가리키는 커밋을 HEAD가 가리키게 한다. 
+그리고 워킹 디렉토리의 파일도 그 시점으로 되돌려 놓는다
+git checkout master 
+
+수정된 파일 되돌리기 
+git checkout -- <file name> //수정 내용 사라짐 
+
+git cat-file -p HEAD	//HEAD가 가리키는 Snapshot의 디렉토리 리스트와 각파일의 SHA-1 checksum, 
+					cat-file, ls-files 저수준 명령어 plumbing
+
+git ls-files -s     // 현재 Index가 어떤 상태인지 확인 할 수 있다
+
+https://git-scm.com/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Reset-%EB%AA%85%ED%99%95%ED%9E%88-%EC%95%8C%EA%B3%A0-%EA%B0%80%EA%B8%B0#_git_reset
+
+Git 관리 트리
+HEAD : 현재 브랜치의 마지막 커밋 Snapshot (현재 작업 중인 브랜치를 가리키는 HEAD)
+현재 브랜치를 가리키는 포인터( 브랜치는 브랜치에 담긴 커밋 중 가장 마지막 커밋을 가리킨다)
+지금의 HEAD가 가리키는 커밋은 바로 다음 커밋의 부모가 된다
+
+index : 바로 다음에 커밋할 Snapshot
+Staging Area는 사용자가 git commit 명령어를 실행했 때 Git이 처리할 것들이 있는 곳
+index는 Working Directory에서 마지막으로 Checkout 한 브랜치의 파일 목록과 파일 내용으로 채워진다
+
+Working Directory: 샌드박스 (.git 디렉토리), 커밋하기 전에는 Index(Staging Area)에 올려놓고 얼마든지 변경 가능
+
+Reset 명령어 : reset 명령이 하는 첫번째 일은 HEAD 브랜치를 이동 시킨다
+HEAD가 가리키는 브랜치는 바꾸지 않는다. HEAD는 현재 브랜치를 가리키고 있고, 현재 브랜치가 가리키는 Commit을 바꾼다.
+예 : HEAD가 master브랜치를 가리고 있을 경우 'git reset 9e5e6a4' 명령은  master브랜치가 9e5e6a4를 가리키게 한다.
+('git reset 9e5e6a4 file.txt'특정 커밋을 명시하면 Git은 HEAD파일을 가져오는 것이 아니라 지정한 커밋엣 파일을 가져온다)
+reset --soft 옵션은 딱 여기까지 진행하고 동작을 멈춘다.
+
+reset 명령은 가장 최근의 git commit 명령을 되돌린다. 
+git commit 명령을 실행하면 Git은 새로운 커밋을 생성하고 HEAD가 가리키는 브랜치가 새로운 커밋을 가리키도록 업데이트한다.
+
+reset 명령어 뒤에 HEAD~ 주면
+git reset --soft HEAD~
+HEAD~는 Index나 워킹 디렉토리는 그대로 놔두고 브랜치가 가리키는 Commit만 이전으로 되돌린다.
+Index를 업데이트한 다음에 git commit 명령어를 실행하면 git commit --ammend 명령과 결과가 같다.
+여기서 git status 명령 실행하면 Index와 reset 명령으로 이동시킨 HEAD의 다른 점이 녹색으로 출력된다.
+
+--mixed 옵션 : Index를 현재 HEAD가 가리키는 Snapshot으로 업데이트 (reset에 옵션을 주지 않은 경우 기본 옵션)
+soft와 같이, 가리키는 대상을 가장 최근의 커밋으로 되돌리는 것은 같다, 그리고 나서 
+Staging Area 를 비우기까지 한다. git commit 명령도 되돌리고 git add 명령까지 되될린다.
+
+--hard : 워킹 디렉토리 업데이트
+워킹 디렉토리까지 업데이트 한다. 
+이 옵션은 reset 명령을 통해 git add 와 git commit 명령으로 생성한 마지막 커밋을 되될린다. 그리고 워킹 디렉토리까지 되될린다.
+이 옵션은 워킹 디렉토리 파일까지 강제로 덮어 쓴다. 커밋한 적이 있으면 reflog를 이용해서 다시 복원 할 수 있다.
+만약 커밋한 적이 없으면 덮어슨 데이터는 복원할 수 없다.
+
+[Review]
+reset 명령은 정해진 순서대로 세 개의 트리를 덮어써 나가다가 옵션에 따라 지정한 곳에서 멈춘다.
+HEAD가 가리키는 브랜치를 옮긴다. (--soft 옵션이 붙으면 여기까지)
+Index를 HEAD가 가리키는 상태로 만든다. (--hard 옵션이 붙지 않았으면 여기까지)
+워킹 디렉토리를 Index의 상태로 만든다.
+
+커밋 합치기 squash : 해당 커밋과 바로 이전 커밋을 합치고 커밋 메시지도 Merge
+
+모든 커밋에서 파일 제거
+filter-branch 는 히스토리 전체에서 필요한 것만 골라내는 데 사용하는 도구다. filter-branch 의 --tree-filter 라는 옵션을 사용하면 
+히스토리에서 passwords.txt 파일을 아예 제거할 수 있다.
+git filter-branch --tree-filter 'rm -f passwords.txt' HEAD
+
+
+Rebase
+한 브랜치에서 변경된 사항을 다른 브랜치에 적용할 수 있다.
+git checkout experiment
+git rebase master
+두 브랜치가 나뉘기 전인 공통 커밋으로 이동하고 나서 그 커밋부터 
+checkout 한 브랜치가 가리키는 커밋까지 diff를 차례로 만들어 임시로 저장해 놓는다
+Rebase할 브랜치(experiment)가 합칠 브랜치(master)가 가리키는 커밋을 가리키게 하고
+임시 저장해 놓은 변경사항을 차례대로 적용한다.(experiment의 변경사항을 master에 적용)
+
+master 브랜치를 Fast-forward 시키기
+git checkout master
+git merget experiment
+
+Rebase는 리모트 브랜치에 커밋을 깔금하게 적용하고 싶을 때 사용 한다.(히스토리가 차례대로 생성)
+
+Rebase는 공개 저장소에 Push 한 커밋은 Rebase 하면 안된다
+Rebase는 기존의 커밋을 그대로 사용하는 것이 아니라 내용은 같지만 다른 커밋을 새로 만든다. 
+새 커밋을 서버에 Push 하고 동료 중 누군가가 그 커밋을 Pull 해서 작업을 한다고 하자. 
+그런데 그 커밋을 git rebase 로 바꿔서 Push 해버리면 동료가 다시 Push 했을 때 동료는 다시 Merge 해야 한다. 
+그리고 동료가 다시 Merge 한 내용을 Pull 하면 내 코드는 정말 엉망이 된다.
+
+git pull 명령 실행 시, 기본적으로 --rebase 옵션이 적용
+git config --global pull.rebase true ( git pull --rebase 과 동일)
+
+HTTP 프로토콜을 사용하는 경우는 매번 사용자이름과 암호를 입력해야 한다.
+git config --global credential.helper cache				//메모리 인증정보 유지
+git config --global credential.helper 'store --file ~/.my-credentials'  파일에서 인증정보 유지 기본 값은 “900” 초로 15분
+[credential]
+    helper = store --file /mnt/thumbdrive/.git-credentials
+	helper = cache --timeout 30000
