@@ -26,6 +26,9 @@ git grep -n --break --heading time *.java  *.java에서 time 검색하고 읽기
 	
 git status
 
+git config --global -l
+git config --global user.name "user name"
+
 git commit --amend
 
 Staging Area에 들어간 상태를 Unstage로 변경
