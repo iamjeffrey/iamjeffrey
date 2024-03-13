@@ -127,6 +127,9 @@ git config --global pull.rebase true ( git pull --rebase 과 동일)
 HTTP 프로토콜을 사용하는 경우는 매번 사용자이름과 암호를 입력해야 한다.
 git config --global credential.helper cache				//메모리 인증정보 유지
 git config --global credential.helper 'store --file ~/.my-credentials'  파일에서 인증정보 유지 기본 값은 “900” 초로 15분
+
+.gitconfig
 [credential]
     helper = store --file /mnt/thumbdrive/.git-credentials
-	helper = cache --timeout 30000
+    or 
+    helper = cache --timeout 30000
