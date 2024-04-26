@@ -34,6 +34,17 @@ PS1="%n@ %~ %# "
 PS1="%n@ %1~ "
   --> 유저명@ ~ [caret]
 
+- Figure out why App Transport Security denines a network connection 
+ nscurl --ats-diagnostics --verbose https://example.com
 
+- ATS Exceptions in Property list
+  Property list Key : ( https://developer.apple.com/documentation/bundleresources/information_property_list/nsapptransportsecurity )
+  {
+      NSExceptionDomains =     {
+          "example.com" =         {
+              NSExceptionRequiresForwardSecrecy = false;
+          };
+      };
+  }
 
 
