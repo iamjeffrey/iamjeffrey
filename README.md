@@ -7,11 +7,11 @@
 
 ## 기술스택
 
-- [iOS] - Swift, RxSwift, Objective-C
-- [Android] - Java, RxJava2
+- [iOS] - Swift, SwiftUI, Combine, RxSwift, Objective-C
+- [Android] - Java, RxJava2, Kotlin
 - [Backend] - Spring boot, node.js
 - [React-Native] - RN0.9 
-- [React.JS] - v11
+- [React.JS] - v11~
 - [Script] - javascript, jQuery, python 
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=iamjeffrey&layout=compact)
