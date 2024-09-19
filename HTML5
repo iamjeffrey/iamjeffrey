@@ -1,10 +1,33 @@
-- No cache Mata tag
-<meta http-equiv='cache-control' content='no-cache'>
-<meta http-equiv='expires' content='0'>
-<meta http-equiv='pragma' content='no-cache'>
+- No cache Mata tag example
+<meta http-equiv='Pragma' content='no-cache'> // HTTP/1.0용, 1.1이상 지원 미 보장
+<meta http-equiv='Cache-Control' content='no-cache'> // HTTP/1.1 이상 사용 권장
+<meta http-equiv='Expires' content='0'> 
 
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
 
+http-equiv : Client 브라우저의 캐시 활성화/비활성화 제어 지시어
+  
+  Expires 
+    content='0' : 캐시 무시
+    content='-1' : 캐시 페이지 즉시 삭제
+    시간 지정 : content="Fri, 31 Dec 2010 23:59:59 GMT"
+    초 지정 : content="86400"  86400 초(24시간) 
+  
+  Cache-Control
+    content : 캐시 제어 조건
+    
+      no-cache : 
+        WEB 페이지 접속 또는 리로드할 때 마다, 서버에서 컨텐츠 변경이 있으면 클라이언트 브라우저는 웹 페이지를 캐시하지 않는다.
+        [*] '캐시하지 않음'이 아니다. 캐시가 Response 저장은 허락하지만 캐시 사용 전, 서베에 재검증 요청을 요구한다.
+    
+      no-store : 클라이언트의 요청, 서버의 응답 등을 캐시하지 않는다(저장하지 않는다).
+
+      must-revalidate : 
+        캐시에 Response를 캐시에 저장할 수 있다. 캐시를 사용하기 전에 반드시 Response가 만료된 것인지 검증해야 한다. 
+        보통 max-age와 같이 사용 한다.
+          Cache-Control: max-age=604800, must-revalidate
 
 
 
