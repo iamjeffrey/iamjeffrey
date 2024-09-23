@@ -18,6 +18,8 @@ step 1 : Check the current status
 	git status
 step 2 : Stash your changes
 	git stash push -m "Save changes before creating a new branch"
+	or
+	git stash --include-untrached
 step 3 : Create and Switch to the new branch
 step 4 : Apply the stashed changes
 	git stash pop
