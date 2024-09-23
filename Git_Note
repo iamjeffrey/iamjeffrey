@@ -13,6 +13,15 @@ git rm --cached <file>
 현재 브랜치 file 변경 전으로 되돌리기
 git restore <file>
 
+커밋하지 않고 로컬 브랜치 변경 파일 유지
+step 1 : Check the current status
+	git status
+step 2 : Stash your changes
+	git stash push -m "Save changes before creating a new branch"
+step 3 : Create and Switch to the new branch
+step 4 : Apply the stashed changes
+	git stash pop
+
 git checkout -b [새 브랜치 이름] [remote 브랜치 이름]
 
 git branch -a			Local & Remote 브랜치
