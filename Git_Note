@@ -81,56 +81,56 @@ index는 Working Directory에서 마지막으로 Checkout 한 브랜치의 파�
 Working Directory: 샌드박스 (.git 디렉토리), 커밋하기 전에는 Index(Staging Area)에 올려놓고 얼마든지 변경 가능
 
 Reset 명령어 : reset 명령이 하는 첫번째 일은 HEAD 브랜치를 이동 시킨다
-HEAD가 가리키는 브랜치는 바꾸지 않는다. HEAD는 현재 브랜치를 가리키고 있고, 현재 브랜치가 가리키는 Commit을 바꾼다.
-예 : HEAD가 master브랜치를 가리고 있을 경우 'git reset 9e5e6a4' 명령은  master브랜치가 9e5e6a4를 가리키게 한다.
-('git reset 9e5e6a4 file.txt'특정 커밋을 명시하면 Git은 HEAD파일을 가져오는 것이 아니라 지정한 커밋엣 파일을 가져온다)
-reset --soft 옵션은 딱 여기까지 진행하고 동작을 멈춘다.
-
-reset 명령은 가장 최근의 git commit 명령을 되돌린다. 
-git commit 명령을 실행하면 Git은 새로운 커밋을 생성하고 HEAD가 가리키는 브랜치가 새로운 커밋을 가리키도록 업데이트한다.
+	HEAD가 가리키는 브랜치는 바꾸지 않는다. HEAD는 현재 브랜치를 가리키고 있고, 현재 브랜치가 가리키는 Commit을 바꾼다.
+	예 : HEAD가 master브랜치를 가리고 있을 경우 'git reset 9e5e6a4' 명령은  master브랜치가 9e5e6a4를 가리키게 한다.
+	('git reset 9e5e6a4 file.txt'특정 커밋을 명시하면 Git은 HEAD파일을 가져오는 것이 아니라 지정한 커밋엣 파일을 가져온다)
+	reset --soft 옵션은 딱 여기까지 진행하고 동작을 멈춘다.
+	
+	reset 명령은 가장 최근의 git commit 명령을 되돌린다. 
+	git commit 명령을 실행하면 Git은 새로운 커밋을 생성하고 HEAD가 가리키는 브랜치가 새로운 커밋을 가리키도록 업데이트한다.
 
 reset 명령어 뒤에 HEAD~ 주면
-git reset --soft HEAD~
-HEAD~는 Index나 워킹 디렉토리는 그대로 놔두고 브랜치가 가리키는 Commit만 이전으로 되돌린다.
-Index를 업데이트한 다음에 git commit 명령어를 실행하면 git commit --ammend 명령과 결과가 같다.
-여기서 git status 명령 실행하면 Index와 reset 명령으로 이동시킨 HEAD의 다른 점이 녹색으로 출력된다.
+	git reset --soft HEAD~
+	HEAD~는 Index나 워킹 디렉토리는 그대로 놔두고 브랜치가 가리키는 Commit만 이전으로 되돌린다.
+	Index를 업데이트한 다음에 git commit 명령어를 실행하면 git commit --ammend 명령과 결과가 같다.
+	여기서 git status 명령 실행하면 Index와 reset 명령으로 이동시킨 HEAD의 다른 점이 녹색으로 출력된다.
 
 --mixed 옵션 : Index를 현재 HEAD가 가리키는 Snapshot으로 업데이트 (reset에 옵션을 주지 않은 경우 기본 옵션)
-soft와 같이, 가리키는 대상을 가장 최근의 커밋으로 되돌리는 것은 같다, 그리고 나서 
-Staging Area 를 비우기까지 한다. git commit 명령도 되돌리고 git add 명령까지 되될린다.
+	soft와 같이, 가리키는 대상을 가장 최근의 커밋으로 되돌리는 것은 같다, 그리고 나서 
+	Staging Area 를 비우기까지 한다. git commit 명령도 되돌리고 git add 명령까지 되될린다.
 
 --hard : 워킹 디렉토리 업데이트
-워킹 디렉토리까지 업데이트 한다. 
-이 옵션은 reset 명령을 통해 git add 와 git commit 명령으로 생성한 마지막 커밋을 되될린다. 그리고 워킹 디렉토리까지 되될린다.
-이 옵션은 워킹 디렉토리 파일까지 강제로 덮어 쓴다. 커밋한 적이 있으면 reflog를 이용해서 다시 복원 할 수 있다.
-만약 커밋한 적이 없으면 덮어슨 데이터는 복원할 수 없다.
+	워킹 디렉토리까지 업데이트 한다. 
+	이 옵션은 reset 명령을 통해 git add 와 git commit 명령으로 생성한 마지막 커밋을 되될린다. 그리고 워킹 디렉토리까지 되될린다.
+	이 옵션은 워킹 디렉토리 파일까지 강제로 덮어 쓴다. 커밋한 적이 있으면 reflog를 이용해서 다시 복원 할 수 있다.
+	만약 커밋한 적이 없으면 덮어슨 데이터는 복원할 수 없다.
 
 [Review]
-reset 명령은 정해진 순서대로 세 개의 트리를 덮어써 나가다가 옵션에 따라 지정한 곳에서 멈춘다.
-HEAD가 가리키는 브랜치를 옮긴다. (--soft 옵션이 붙으면 여기까지)
-Index를 HEAD가 가리키는 상태로 만든다. (--hard 옵션이 붙지 않았으면 여기까지)
-워킹 디렉토리를 Index의 상태로 만든다.
+	reset 명령은 정해진 순서대로 세 개의 트리를 덮어써 나가다가 옵션에 따라 지정한 곳에서 멈춘다.
+	HEAD가 가리키는 브랜치를 옮긴다. (--soft 옵션이 붙으면 여기까지)
+	Index를 HEAD가 가리키는 상태로 만든다. (--hard 옵션이 붙지 않았으면 여기까지)
+	워킹 디렉토리를 Index의 상태로 만든다.
 
 커밋 합치기 squash : 해당 커밋과 바로 이전 커밋을 합치고 커밋 메시지도 Merge
 
 모든 커밋에서 파일 제거
-filter-branch 는 히스토리 전체에서 필요한 것만 골라내는 데 사용하는 도구다. filter-branch 의 --tree-filter 라는 옵션을 사용하면 
-히스토리에서 passwords.txt 파일을 아예 제거할 수 있다.
-git filter-branch --tree-filter 'rm -f passwords.txt' HEAD
+	filter-branch 는 히스토리 전체에서 필요한 것만 골라내는 데 사용하는 도구다. filter-branch 의 --tree-filter 라는 옵션을 사용하면 
+	히스토리에서 passwords.txt 파일을 아예 제거할 수 있다.
+	git filter-branch --tree-filter 'rm -f passwords.txt' HEAD
 
 
 Rebase
-한 브랜치에서 변경된 사항을 다른 브랜치에 적용할 수 있다.
-git checkout experiment
-git rebase master
-두 브랜치가 나뉘기 전인 공통 커밋으로 이동하고 나서 그 커밋부터 
-checkout 한 브랜치가 가리키는 커밋까지 diff를 차례로 만들어 임시로 저장해 놓는다
-Rebase할 브랜치(experiment)가 합칠 브랜치(master)가 가리키는 커밋을 가리키게 하고
-임시 저장해 놓은 변경사항을 차례대로 적용한다.(experiment의 변경사항을 master에 적용)
+	한 브랜치에서 변경된 사항을 다른 브랜치에 적용할 수 있다.
+	git checkout experiment
+	git rebase master
+	두 브랜치가 나뉘기 전인 공통 커밋으로 이동하고 나서 그 커밋부터 
+	checkout 한 브랜치가 가리키는 커밋까지 diff를 차례로 만들어 임시로 저장해 놓는다
+	Rebase할 브랜치(experiment)가 합칠 브랜치(master)가 가리키는 커밋을 가리키게 하고
+	임시 저장해 놓은 변경사항을 차례대로 적용한다.(experiment의 변경사항을 master에 적용)
 
 master 브랜치를 Fast-forward 시키기
-git checkout master
-git merget experiment
+	git checkout master
+	git merget experiment
 
 Rebase는 리모트 브랜치에 커밋을 깔금하게 적용하고 싶을 때 사용 한다.(히스토리가 차례대로 생성)
 
@@ -147,8 +147,34 @@ HTTP 프로토콜을 사용하는 경우는 매번 사용자이름과 암호를 
 git config --global credential.helper cache				//메모리 인증정보 유지
 git config --global credential.helper 'store --file ~/.my-credentials'  파일에서 인증정보 유지 기본 값은 “900” 초로 15분
 
+------------------------------------------
 .gitconfig
-[credential]
-    helper = store --file /mnt/thumbdrive/.git-credentials
-    or 
-    helper = cache --timeout 30000
+	[credential]
+	    helper = store --file /mnt/thumbdrive/.git-credentials
+		    or 
+	    helper = cache --timeout 30000
+
+	# Beyond Compare 사용
+	[diff]
+		tool = b5
+	[difftool]
+		prompt = false
+	[difftool "bcomp"]
+		trustExitCode = true
+		cmd = /usr/local/bin/bcomp \"$LOCAL\" \"$REMOTE\"
+	[merge]
+		tool = bcomp
+	[mergetool]
+		prompt = false
+	[mergetool "bcomp"]	
+		trustExitCode = true
+		cmd = /usr/local/bin/bcomp \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+
+	# sourcetree도 Beyond Compare 사용
+	[difftool "sourcetree"]
+		cmd = /usr/local/bin/bcomp \"$LOCAL\" \"$REMOTE\"
+		path = -ro
+	[mergetool "sourcetree"]
+		cmd = /usr/local/bin/bcomp \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+		trustExitCode = true
+
