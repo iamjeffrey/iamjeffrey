@@ -10,9 +10,6 @@ git log --oneline --decorate --graph --all
 Untracked file 지정
 git rm --cached <file>
 
-현재 브랜치 file 변경 전으로 되돌리기
-git restore <file>
-
 커밋하지 않고 로컬 브랜치 변경 파일 유지
 step 1 : Check the current status
 	git status
@@ -61,6 +58,9 @@ git checkout master
 
 수정된 파일 되돌리기 
 git checkout -- <file name> //수정 내용 사라짐 
+
+	현재 브랜치 file 변경 전으로 되돌리기
+	git restore <file>  //버전에 따라 미지원
 
 git cat-file -p HEAD	//HEAD가 가리키는 Snapshot의 디렉토리 리스트와 각파일의 SHA-1 checksum, 
 					cat-file, ls-files 저수준 명령어 plumbing
