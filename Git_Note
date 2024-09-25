@@ -14,9 +14,10 @@ git rm --cached <file>
 step 1 : Check the current status
 	git status
 step 2 : Stash your changes
-	git stash push -m "Save changes before creating a new branch"
+	git stash push -m "Save changes before creating a new branch" 
 	or
-	git stash --include-untrached
+	git stash --include-untrached  // untrached 파일도 같이 포함 시켜 stash를 생성한다
+
 step 3 : Create and Switch to the new branch
 step 4 : Apply the stashed changes
 	git stash pop
