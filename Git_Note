@@ -16,7 +16,7 @@ step 1 : Check the current status
 step 2 : Stash your changes
 	git stash push -m "Save changes before creating a new branch" 
 		or
-	git stash --include-untrached  // untrached 파일도 같이 포함 시켜 stash를 생성한다
+	git stash --include-untrached or git stash -u // untrached 파일도 같이 포함 시켜 stash를 생성한다
 		git stash list -> stash@{0}: WIP on ... 이름의 stash를 새 브랜치에 stash 적용 시킨다.
 		git stash apply stash@{0}    // ?? git stash pop해도 적용되는 듯 ?, stash stack 리스트에서 원하는 stash를 적용하고 싶을때
 
