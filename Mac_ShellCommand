@@ -1,3 +1,5 @@
+# telnet
+curl -v telnet://localhost:8080
 
 - Available shell on Mac 
 cat /etc/shells
