@@ -1,6 +1,9 @@
 # telnet
 curl -v telnet://localhost:8080
 
+# Android Simulator telnet token값을 텔넷 연결 후 입력.
+cat /Users/<user>/.emulator_console_auth_token
+
 - Available shell on Mac 
 cat /etc/shells
   ->  /bin/bash
