@@ -1,3 +1,6 @@
+# Terminal에서 커맨드 실행 시 database is inaccessible 에러 : .zshrc
+  -> 추가 : export TERMINFO=/usr/share/terminfo
+
 # telnet
 curl -v telnet://localhost:8080
 
