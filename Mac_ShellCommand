@@ -65,4 +65,12 @@ PS1="%n@ %1~ "
       };
   }
 
+# openssl command
+$ openssl s_client -connect <url address>
+
+# openssl path
+$ type openssl 
+
+
+
 
