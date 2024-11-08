@@ -24,4 +24,7 @@ $ brew -h # Help
 $ brew info <package name>
 
 
+$ brew deps --tree --installed <package name>
+$ brew deps --tree <package name>
+
  
