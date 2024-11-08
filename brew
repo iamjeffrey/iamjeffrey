@@ -1,0 +1,27 @@
+# Mac
+
+# Mac OS 15 Sequoia 15 Openssl@1.1 trouble
+  brew doctor
+      Warning: Some installed formulae are deprecated or disabled.
+      You should find replacements for the following formulae:
+      openssl@1.1
+    
+$ brew uninstall --ignore-dependencies openssl@1.1
+$ brew reinstall perl ///
+
+# openssl, nghttp
+$ brew install curl --with-openssl
+$ brew install curl --with-nghttp2
+$ type openssl  # openssl path
+  -> openssl is /../../...
+
+# command
+$ brew missing
+$ brew list or brew ls
+$ brew list --versions <brew로 설치한 package name>    # package version
+$ brew config -v
+$ brew -h # Help
+$ brew info <package name>
+
+
+ 
