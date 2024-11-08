@@ -1,0 +1,12 @@
+# Mac OS 
+
+$ npm config ls
+$ npm config ls -l      # more detail
+
+npm or yarn install '**** SSLXX_GET_SERVER_HELLO:unknown ***' 에러 발생 때
+.npmrc 추가
+  -> proxy=http://exsample.proxy.com:8080
+     https-proxy=http://exsample.proxy.com:8080 or https://exsample.proxy.com
+
+  $ npm config set proxy http://exsample.proxy.com:8080
+  $ npm config set https-proxy http://exsample.proxy.com:8080
