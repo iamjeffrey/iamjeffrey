@@ -15,7 +15,7 @@
 - 데이터 분석 및 테스트: Python3, PySide6, PyQt
 ```
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=iamjeffrey&layout=compact&theme=flat)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=iamjeffrey&layout=compact)
 
 ## 캐리어
 | **Type** | **Date** | **Contents** | **Oragnization** |
