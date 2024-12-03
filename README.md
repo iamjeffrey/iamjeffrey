@@ -1,7 +1,5 @@
 # Welcome! Who am I
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=onedark)]
-
 :bowtie: 모바일 앱 개발
  ![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/iamjeffrey) ![Hits](https://img.shields.io/github/followers/iamjeffrey?label=Follow)
 
@@ -17,7 +15,7 @@
 - 데이터 분석 및 테스트: Python3, PySide6, PyQt
 ```
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=iamjeffrey&layout=compact&theme=onedark)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=iamjeffrey&layout=compact&theme=flat)
 
 ## 캐리어
 | **Type** | **Date** | **Contents** | **Oragnization** |
