@@ -1,10 +1,11 @@
 # Welcome! Who am I
-https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=flat
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=onedark)]
 
 :bowtie: 모바일 앱 개발
-
+<div align="center">
  ![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/iamjeffrey) ![Hits](https://img.shields.io/github/followers/iamjeffrey?label=Follow)
-
+</div>
 
 ## 기술스택
 `모바일 플랫폼: iOS, Android, 크로스플랫폼`
