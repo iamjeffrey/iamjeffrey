@@ -6,13 +6,16 @@
 
 
 ## 기술스택
-
-- [iOS] - Swift, SwiftUI, Combine, RxSwift, Objective-C
-- [Android] - Java, RxJava2, Kotlin
-- [Backend] - Spring boot, node.js
-- [React-Native] - RN0.9 
-- [React.JS] - v11~
-- [Script] - javascript, jQuery, python 
+`모바일 플랫폼: iOS, Android, 크로스플랫폼`
+```
+- iOS: Swift, Combine, RxSwift, Objective-C
+- Android: Kotlin, Coroutine, Java, RxJava
+- 크로스플랫폼: React Native, JavaScript
+- 프런트엔드 : Vue.js, ReactJS, JavaScript, jQuery
+- 백엔드: Spring Framework, MyBatis, JPA, Oracle SQL, Node.js, MySQL
+- DevOps 및 협업: Git, GitLab, JIRA, Confluence, Jenkins, Argo CD, 제니퍼, SVN
+- 데이터 분석 및 테스트: Python3, PySide6, PyQt
+```
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=iamjeffrey&layout=compact)
 
@@ -22,7 +25,7 @@
 | *Develop* | 2002~ |  | --- |
 
 # Webpack : migration v3 -> v4
-https://github.com/webpack/webpack-dev-server/blob/master/migration-v4.md
+`https://github.com/webpack/webpack-dev-server/blob/master/migration-v4.md`
 
 # iOS Development 
 ## XCode Tips
