@@ -1,0 +1,13 @@
+
+# vuejs ver 2.x
+# template 
+
+<template>
+  <!-- -->
+  <div class="my-checkbox" :class="{'my-checkbox_disabled': disabled}">
+    <img v-else class="my-checkbox_check_image" />
+    <div class="my-checkbox_label">
+      ...
+    </div>
+  </div>
+</template>
