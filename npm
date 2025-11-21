@@ -17,3 +17,7 @@ npm or yarn install '**** SSLXX_GET_SERVER_HELLO:unknown ***' 에러 발생 때
   $ npm config set proxy http://exsample.proxy.com:8080
   $ npm config set https-proxy http://exsample.proxy.com:8080
 
+# npm Error: EACCES permission denied, access '/usr/local ...' 
+    sudo chown -R "유저계정" ~/.npm
+    sudo chown -R "유저계정" /usr/local/lib/node_modeles
+    
