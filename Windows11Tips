@@ -1,0 +1,17 @@
+
+https://github.com/microsoft/PowerToys
+https://learn.microsoft.com/en-us/windows/powertoys/fancyzones
+https://learn.microsoft.com/en-us/windows/powertoys/
+
+  PowerShell
+  # List all layouts with visual previews
+  FancyZonesCLI.exe ls
+  
+  # Apply "columns" template to all monitors
+  FancyZonesCLI.exe s columns --all
+  
+  # Set custom layout on monitor 2
+  FancyZonesCLI.exe s {uuid} --monitor 2
+  
+  # Assign hotkey Win+Ctrl+Alt+3 to a layout
+  FancyZonesCLI.exe shk 3 {uuid}
