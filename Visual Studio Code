@@ -3,3 +3,58 @@ code --list-extensions > extensions.list
 
 - Visual Studio Code에 extensions 리스트 설치하기
 cat extensions.list |% { code --install-extension $_} 
+
+# prettier
+- prettier 포맷 제외
+  .prettierignore
+      package.json
+      package-lock.json
+
+- prettier 포맷 적용할 File  
+npx prettier --write js/app.js
+- All file
+npx prettier --write .
+
+- VS Code 파일 저장시, Prettier 포맷 자동 적용 
+.vscode/setting.json
+{
+  "editor.formatOnSave": true
+}
+
+- format 파일 명 : .prettierrc or .prettierrc.json
+{
+  "singleQuote" : true,
+  "trailingComma": true, // true: default 
+  "semi": false,  // true: default, false : 세미콜론을 붙이지 않으면 Error가 되는 위치만 세미콜론 추가
+  "parser": "none", // default : 미 지정, (typescript, babel, flow, scss, vue ...)
+  "bracketSpacing" : true,
+  "endOfLine" : "crlf",
+  "useTabs" : true,  // 들여쓰기 tab 사용
+  "tabWidth" : 4,
+  "singleAttributePerLine" : false,
+
+  "requierePragma": false, // default : false, 파일 시작 부분에 pragma(/** @format */)가 포함 된 파일 만 포맷 적용
+  "insertPragma" : false,  // default : false, 파일 시작 부분에 pragma(/** @format */) 삽입
+  "vueIndentScriptAndStyle": false, // default : false, Vue 파일에서 <script>와 <style>을 들여쓰기 할지 여부
+
+  // lf : Linux, MacOS, git repo 에서 라인피드(\n), crlf: 윈도우에서 캐리지 리턴+라인 피드(\r\n), cr: 캐리지 리턴 문자 만
+  "endOfLine": "auto", // default: auto (기존 줄 끝 유지)
+
+  -- 지정 확장자,폴더,파일에 대해서 별도 설정
+  "overrides" : [
+        {
+            "files": ".java",
+            "options": {
+                "useTabs" : false,
+                "tabWidth": 4
+            }
+        },
+        {
+              "files": ["*.html"],
+              "options": {
+                  "useTabs" : false,
+                  "tabWidth": 4
+              }
+          } 
+    ]
+}
