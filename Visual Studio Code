@@ -5,6 +5,32 @@ code --list-extensions > extensions.list
 # Visual Studio Code에 Extensions 리스트 설치하기
 cat extensions.list |% { code --install-extension $_} 
 
+# setting.json 설정
+    - Workspace Settings Title Bar Color Customization
+    {
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#2E7D32",
+        "titleBar.inactiveBackground": "#2E7D32",
+        "titleBar.activeForeground": "#FFFFFF",
+        "titleBar.inactiveForeground": "#FFFFFFCC"
+    }
+    
+    - VScode Editor 설정
+    {
+        "editor.formatOnSave": true,
+        
+        // 파일 끝에 자동으로 공백 제거
+        "files.trimTrailingWhitespace": true,
+
+        // 파일 끝에 자동으로 새 줄 추가
+        "files.insertFinalNewline": true,
+
+        // Folder Explorer Settings tree 펼침 상태 유지
+
+        "explorer.compactFolders": false,
+        "editor.minimap.enabled": false
+    }
+
 # prettier
     - prettier 포맷 제외
         .prettierignore
