@@ -1,0 +1,73 @@
+
+# MyBatis 동적 쿼리
+
+<foreach collection="(Map,List,Set배열)반복가능한 컬렉션 변수"
+    item="현재 객체"
+    index="현재 인덱스"
+    open="시작 문자열"
+    close="끝나는 문자열"
+    separator="컬렉션 반복될 때 구분자(반복될때 마다 끝에 추가할 문자)">
+    #{item.propertyName}
+</foreach>
+
+<select id="selectUsers" parameterType="hashMap" resultType="User">
+    SELECT * FROM users
+    WHERE 1=1 
+        <foreach collection="users" item="item" open="AND id IN (" close=")" separator=",">
+            #{item.userId}
+        </foreach>
+</select>
+
+<select id="selectUsers" parameterType="hashMap" resultType="User">
+    SELECT * FROM users
+    <where>
+        <if test="users != null and users.size() > 0">
+            AND id IN 
+            <foreach collection="users" item="item" open="(" close=")" separator=",">
+                #{item.userId}
+            </foreach>
+        </if>
+        <if test="users == null or users.size() == 0">
+            AND 1=0
+        </if>
+
+        <choose>
+            <when test="조건식">
+                <!-- 조건식이 참일 때 실행할 SQL -->
+            </when>
+            <when test="다른 조건식">
+                <!-- 다른 조건식이 참일 때 실행할 SQL -->
+            </when>
+            <otherwise>
+                <!-- 모든 조건식이 거짓일 때 실행할 SQL -->
+            </otherwise>
+        </choose>
+    </where>
+</select>
+
+<trim prefix="추가할 시작 문자열" prefixOverrides="시작 쿼리문에서 삭제할 문자열" suffix="추가할 끝 문자열" suffixOverrides="끝 쿼리문에서 삭제할 문자열" />
+
+<select id="selectUsers" parameterType="hashMap" resultType="User">
+    SELECT * FROM users
+        <trim prefix="WHERE" prefixOverrides="AND|OR">
+            <if test="users != null and users.size() > 0">
+                AND id IN 
+                <foreach collection="users" item="item" open="(" close=")" separator=",">
+                    #{item.userId}
+                </foreach>
+            </if>
+            <if test="users == null or users.size() == 0">
+                AND 1=0
+            </if>
+        </trim>
+
+        <trim prefix="ORDER BY" prefixOverrides="," suffixOverrides=",">
+            USER_NAME DESC
+        </trim>
+</select>
+
+
+
+
+
+
