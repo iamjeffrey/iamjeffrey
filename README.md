@@ -43,6 +43,13 @@
  + Asserts
  + XIBs
  + Storyboards
+
+ ## AppLink Command
+ - Android
+   adb shell am start -a android.intent.action.VIEW -d "[scheme]://[host]?[key1=value1&key2=value2]"
+
+ - iOS
+   xcrun simctl openurl booted "[Scheme]://[URL identifier]?[key1=value1&key2=value2]"
  
  ## Coordinator 패턴 Folder
  MVVM 패턴에서는 위에 Folder구조를 추천 하지만, 개인적으로 비즈니스 폴더 아래에 모델, 뷰모델, 컨트롤러가 같이 있는게 구분하기 편한 것 같습니다.
