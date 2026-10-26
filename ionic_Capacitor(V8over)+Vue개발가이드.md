@@ -1,6 +1,6 @@
 # [Capacitor + Vue] 현대적인 모바일 앱 개발 환경 및 명령어 가이드
 - Ionic CLI 최신 트렌드, npx 활용, 불필요해진 구형 도구 대체, Vite 기반 `npm run dev` 권장,
-  Capacitor PWA Elements 등  **현대적인 Capacitor(V8~) + Vue 개발 환경** 구축 핵심 팁
+  Capacitor PWA Elements 등  **현대적인 Capacitor(V8~) + Vue 개발 환경** 구축 핵심 가이드
 
 ## 1. 사전 환경 확인 명령어
 
