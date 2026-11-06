@@ -6,7 +6,7 @@
 
 현재 시스템에 설치된 주요 도구들의 버전 확인
 
-```powershell
+```shell
 ionic --version
 npm view @ionic/cli version
 npm list -g typescript --depth=0
@@ -20,7 +20,7 @@ tsc -v
 
 ### ❌ 과거 방식 (Global 설치 후 실행)
 
-```powershell
+```shell
 npm install -g @ionic/cli
 ionic start myApp tabs --type vue
 
@@ -30,7 +30,7 @@ ionic start myApp tabs --type vue
 
 ### ⭕ [권장] 최신 npx 일회성 실행 방식
 
-```powershell
+```shell
 npx @ionic/cli start my-capacitor-app tabs --type=vue --capacitor
 
 ```
@@ -57,7 +57,7 @@ Capacitor 최신 버전(3 이상) 환경에서는 아래 구형 도구들을 더
 2. **`cordova-res` (대체됨)**
 * Cordova 시절부터 쓰이던 구형 아이콘/스플래시 생성 도구, 최신 Android Adaptive Icon이나 최신 iOS 해상도 규격을 지원하지 못한다.
 * **현재:** 공식 도구인 `@capacitor/assets`를 프로젝트 로컬 패키지로 설치해 사용
-```powershell
+```shell
 # 1. 로컬 패키지 설치
 npm install -D @capacitor/assets
 
@@ -83,7 +83,7 @@ npx capacitor-assets generate
 ## 5. 기타 유용한 명령어 및 팁
 
 * **지원하는 스타터 템플릿 목록 확인:**
-```powershell
+```shell
 ionic start --list
 
 ```
@@ -94,7 +94,7 @@ ionic start --list
 * 브라우저 환경에서도 동일한 UI(파일 업로드, 카메라 모달 등)를 띄우려면 PWA Elements 설치가 필요
 
 
-```powershell
+```shell
 npm install @ionic/pwa-elements
 
 ```
