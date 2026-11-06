@@ -69,8 +69,9 @@
 - 2022년 기준 버전 14 이상 97%
 - 카카오톡 : 2022년 11월 초부터 iOS 13.7 이하 버전 지원 중단
   
-<!--
-**iamjeffrey/iamjeffrey** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
+**iamjeffrey/iamjeffrey** is a ✨ _special_ ✨
+repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
@@ -82,4 +83,4 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
--->
+
