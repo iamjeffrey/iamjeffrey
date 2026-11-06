@@ -1,7 +1,7 @@
 
 # JavaScript Web APIs
 
-##. URL Pattern API
+## URL Pattern API
 Matches and extracts parameters from URLs using route-style syntax, 
 the exact logic a router library does internally, available natively.
 
@@ -13,7 +13,7 @@ Why it’s useful:
 Genuinely useful for service workers deciding how to handle a fetch, 
 or any code that needs route-matching logic without pulling in a full router
 
-##. Web Locks API
+## Web Locks API
 Coordinates access to a shared resource across multiple tabs, so two tabs don’t both try to, say,
  refresh the same auth token at the same time.
 
@@ -26,7 +26,7 @@ Solves a real cross-tab race condition that’s otherwise genuinely awkward to c
 Pairs naturally with Broadcast Channel from Part 2, one coordinates who does the work,
  the other announces the result
 
-##. Screen Orientation API
+## Screen Orientation API
 Reads the device’s current orientation and, on supporting devices, can lock it to a specific one.
 
 console.log(screen.orientation.type); // "portrait-primary"
