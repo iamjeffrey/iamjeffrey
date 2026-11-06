@@ -47,16 +47,16 @@ npx @ionic/cli start my-capacitor-app tabs --type=vue --capacitor
 
 ## 3. 이제 쓰지 않는 구형 도구들 (과감한 생략)
 
-Capacitor 최신 버전(3 이상) 환경에서는 아래 구형 도구들을 더 이상 설치할 필요가 없습니다.
+Capacitor 최신 버전(3 이상) 환경에서는 아래 구형 도구들을 더 이상 설치할 필요가 없다.
 
 1. **`native-run` (불필요)**
-* 과거 에뮬레이터나 기기로 앱을 띄우던 도구입니다.
-* **현재:** Capacitor CLI 자체의 `run` 명령어로 완전히 통합되었습니다.
+* 과거 에뮬레이터나 기기로 앱을 띄우던 도구
+* **현재:** Capacitor CLI 자체의 `run` 명령어로 통합
 
 
 2. **`cordova-res` (대체됨)**
-* Cordova 시절부터 쓰이던 구형 아이콘/스플래시 생성 도구입니다. 최신 Android Adaptive Icon이나 최신 iOS 해상도 규격을 지원하지 못합니다.
-* **현재:** 공식 도구인 `@capacitor/assets`를 프로젝트 로컬 패키지로 설치해 사용합니다.
+* Cordova 시절부터 쓰이던 구형 아이콘/스플래시 생성 도구, 최신 Android Adaptive Icon이나 최신 iOS 해상도 규격을 지원하지 못한다.
+* **현재:** 공식 도구인 `@capacitor/assets`를 프로젝트 로컬 패키지로 설치해 사용
 ```powershell
 # 1. 로컬 패키지 설치
 npm install -D @capacitor/assets
@@ -90,8 +90,8 @@ ionic start --list
 
 
 * **Capacitor 플러그인의 웹 지원 (`@ionic/pwa-elements`):**
-* 카메라, 사진첩 등 상당수의 Capacitor 플러그인은 웹 브라우저에서 실행될 때 자체 UI가 없어 에러가 발생할 수 있습니다.
-* 브라우저 환경에서도 동일한 UI(파일 업로드, 카메라 모달 등)를 띄우려면 PWA Elements를 설치해야 합니다.
+* 카메라, 사진첩 등 상당수의 Capacitor 플러그인은 웹 브라우저에서 실행될 때 자체 UI가 없어 에러가 발생할 수 있다.
+* 브라우저 환경에서도 동일한 UI(파일 업로드, 카메라 모달 등)를 띄우려면 PWA Elements 설치가 필요
 
 
 ```powershell
