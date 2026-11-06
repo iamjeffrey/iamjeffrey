@@ -1,3 +1,43 @@
+
+📚 Useful Mac Terminal Commands
+
+Opens the current folder in Finder
+open .
+
+s much further:
+    open index.html              # open in default browser
+    open -a Safari index.html    # open in a specific app
+    open -a "Visual Studio Code" .
+    open https://github.com      # URLs work too
+    open -R config.json          # reveal the file in Finder (highlighted)
+
+
+## mdfind — Spotlight Lives in Your Terminal
+    find 는 용량이 큰 드라이브에서는 검색이 느림.
+    Spotlight has a command-line interface.
+
+    mdfind "docker-compose.yml"
+
+    Scope it to the current folder:
+    mdfind -onlyin . "TODO"
+
+    Find by name only:
+    mdfind -name ".zshrc"
+
+## screencapture — Screenshots Without Touching the Mouse
+    You know Cmd+Shift+4
+    screencapture -c            # full screen → straight to clipboard
+    screencapture -i shot.png   # interactive selection → file
+    screencapture -T 5 shot.png # 5-second timer (open that dropdown menu first)
+    screencapture -w window.png # click a window, capture just it
+
+    The -c flag is the daily driver where full screenshot directly to the clipboard, 
+    no file cluttering your desktop, ready to paste into Slack.
+
+<hr />
+
+
+
 # Terminal에서 커맨드 실행 시 database is inaccessible 에러 : .zshrc
   -> 추가 : export TERMINFO=/usr/share/terminfo
 
