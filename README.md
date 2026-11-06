@@ -74,17 +74,18 @@
 repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
-📚 Useful Resources
-🚀 
-👨‍💻 About the Author
-🔗 Connect 
-🐙 GitHub, 💼 LinkedIn, 📧 Email
-💬 Feedback
-⭐ Thanks for Reading!
-👏 Give it a clap
-💬 Share your feedback
-🔗 Share it with other developers and DevOps engineers
-➕ Follow me for more DevOps, Cloud, GitHub, and automation content
+
+- 📚 Useful Resources
+- 🚀 
+- 👨‍💻 About the Author
+- 🔗 Connect 
+- 🐙 GitHub, 💼 LinkedIn, 📧 Email
+- 💬 Feedback
+- ⭐ Thanks for Reading!
+- 👏 Give it a clap
+- 💬 Share your feedback
+- 🔗 Share it with other developers and DevOps engineers
+- ➕ Follow me for more DevOps, Cloud, GitHub, and automation content
 
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
