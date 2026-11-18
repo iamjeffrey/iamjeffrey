@@ -50,11 +50,6 @@
 <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=iamjeffrey&layout=compact&theme=tokyonight&hide_border=true" />
 </p>
 
-## 💼 **Career** 
-| Type | Period | Description |
-|:---:|:---:|:---:|
-| Software Development | 2002 ~ Present | Software & Application Development |
-
 <br/>
 
 <p> <strong>Thanks for visiting my GitHub profile! 🚀</strong> </p>
