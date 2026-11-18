@@ -4,7 +4,7 @@
 <img src="./assets/github-profile-banner.png" width="100%" alt="Jeffrey - Software Engineer" /> 
 </p>
 
-## Software Engineer
+## 💼 Software Engineer
 **Mobile · Web · Backend · DevOps**
 > Building software across multiple platforms with a focus on maintainability and scalability. 
 
