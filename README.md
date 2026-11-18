@@ -82,7 +82,7 @@
 |:---:|:---:|:---:|
 | Software Development | 2002 ~ Present | Software & Application Development |
 
-<p align="center">   <strong>Keep Learning, Keep Building. 🚀</strong> </p>
+<p> <strong>Keep Learning, Keep Building. 🚀</strong> </p>
 
 **iamjeffrey/iamjeffrey** is a ✨ _special_ ✨
 repository because its `README.md` (this file) appears on your GitHub profile.
