@@ -11,11 +11,11 @@ with a focus on maintainability and scalability.
 ![Profile Views](https://komarev.com/ghpvc/?username=iamjeffrey&style=flat-square&color=blue) ![GitHub Followers](https://img.shields.io/github/followers/iamjeffrey?style=flat-square&label=Followers)
 
 
-\<p align="center">   \<img src="./assets/github-profile-banner.png" width="100%" alt="Jeffrey - Software Engineer" /> \</p>
+<p align="center">   <img src="./assets/github-profile-banner.png" width="100%" alt="Jeffrey - Software Engineer" /> </p>
 
-\<p align="center">   \<strong>Software Engineer\</strong>   \<br/>   Mobile · Web · Backend · DevOps   \<br/>   Building software across multiple platforms   with a focus on maintainability and scalability. \</p>
+<p align="center">   <strong>Software Engineer\</strong>   \<br/>   Mobile · Web · Backend · DevOps   <br/>   Building software across multiple platforms   with a focus on maintainability and scalability. </p>
 
-\<p align="center">   \<img src="[https://komarev.com/ghpvc/?username=iamjeffrey&style=flat-square&color=0A84FF](https://komarev.com/ghpvc/?username=iamjeffrey\&style=flat-square\&color=0A84FF)" />   \<img src="[https://img.shields.io/github/followers/iamjeffrey?style=flat-square&label=Followers&color=0A84FF](https://img.shields.io/github/followers/iamjeffrey?style=flat-square\&label=Followers\&color=0A84FF)" /> \</p>
+<p align="center">   <img src="[https://komarev.com/ghpvc/?username=iamjeffrey&style=flat-square&color=0A84FF](https://komarev.com/ghpvc/?username=iamjeffrey\&style=flat-square\&color=0A84FF)" />   <img src="[https://img.shields.io/github/followers/iamjeffrey?style=flat-square&label=Followers&color=0A84FF](https://img.shields.io/github/followers/iamjeffrey?style=flat-square\&label=Followers\&color=0A84FF)" /> </p>
 
 
 ---
