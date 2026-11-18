@@ -1,4 +1,4 @@
-# 👋 Welcome! I'm Jeffrey
+# 👋 Welcome! I'm **만별**(Jeffrey)
 
 <p align="center">   
 <img src="./assets/github-profile-banner.png" width="100%" alt="Jeffrey - Software Engineer" /> 
