@@ -39,6 +39,15 @@ with a focus on maintainability and scalability.
 |:--------:|:--------:|:--------:|:--------:|
 | *Develop* | 2002~ |  | --- |
 
+## 💼 **Career**
+
+| Type | Period | Description |
+|:---:|:---:|:---:|
+| Software Development | 2002 ~ Present | Software & Application Development |
+
+
+
+
 # Webpack : migration v3 -> v4
 `https://github.com/webpack/webpack-dev-server/blob/master/migration-v4.md`
 
