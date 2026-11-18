@@ -7,7 +7,7 @@ Building software across multiple platforms
 with a focus on maintainability and scalability. 
 모바일 애플리케이션 개발을 중심으로 iOS, Android, Cross-platform 및 Web/Backend 영역까지 경험하고 있는 개발자입니다. 
 다양한 기술과 플랫폼을 활용하여 문제를 해결하고, 유지보수하기 좋은 구조와 지속 가능한 개발을 지향합니다. 
-
+ 
 ![Profile Views](https://komarev.com/ghpvc/?username=iamjeffrey&style=flat-square&color=blue) ![GitHub Followers](https://img.shields.io/github/followers/iamjeffrey?style=flat-square&label=Followers)
 
 
@@ -15,7 +15,7 @@ with a focus on maintainability and scalability.
 
 <p align="center">   <strong>Software Engineer</strong>   <br/>   Mobile · Web · Backend · DevOps   <br/>   Building software across multiple platforms   with a focus on maintainability and scalability. </p>
 
-<p align="center">   <img src="[https://komarev.com/ghpvc/?username=iamjeffrey&style=flat-square&color=0A84FF](https://komarev.com/ghpvc/?username=iamjeffrey\&style=flat-square\&color=0A84FF)" />   <img src="[https://img.shields.io/github/followers/iamjeffrey?style=flat-square&label=Followers&color=0A84FF](https://img.shields.io/github/followers/iamjeffrey?style=flat-square\&label=Followers\&color=0A84FF)" /> </p>
+<p align="center">   <img src="https://komarev.com/ghpvc/?username=iamjeffrey&style=flat-square&color=0A84FF" />   <img src="https://img.shields.io/github/followers/iamjeffrey?style=flat-square&label=Followers&color=0A84FF" /> </p>
 
 
 ---
