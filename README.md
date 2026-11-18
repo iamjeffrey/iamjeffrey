@@ -82,6 +82,8 @@
 |:---:|:---:|:---:|
 | Software Development | 2002 ~ Present | Software & Application Development |
 
+<br/>
+
 <p> <strong>Keep Learning, Keep Building. 🚀</strong> </p>
 
 **iamjeffrey/iamjeffrey** is a ✨ _special_ ✨
