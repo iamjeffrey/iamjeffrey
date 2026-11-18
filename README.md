@@ -1,16 +1,26 @@
-# Welcome! Who am I
+# 👋 Welcome! I'm Jeffrey
 
-:bowtie: 모바일 앱 개발
- ![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/iamjeffrey) ![Hits](https://img.shields.io/github/followers/iamjeffrey?label=Follow)
+### Software Engineer
+**Mobile · Web · Backend · DevOps**
 
-## 기술스택
-`모바일 플랫폼: iOS, Android, 크로스플랫폼`
+Building software across multiple platforms
+with a focus on maintainability and scalability.
+모바일 애플리케이션 개발을 중심으로 iOS, Android, Cross-platform 및 Web/Backend 영역까지 경험하고 있는 개발자입니다.
+다양한 기술과 플랫폼을 활용하여 문제를 해결하고, 유지보수하기 좋은 구조와 지속 가능한 개발을 지향합니다.
+
+![Profile Views](https://komarev.com/ghpvc/?username=iamjeffrey&style=flat-square&color=blue)
+![GitHub Followers](https://img.shields.io/github/followers/iamjeffrey?style=flat-square&label=Followers)
+
+---
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=iamjeffrey&layout=compact)
+
+## 🛠 Tech Stack
 ```
 - iOS: Swift, Combine, RxSwift, Objective-C
 - Android: Kotlin, Coroutine, Java, RxJava
-- 크로스플랫폼: React Native, JavaScript
-- 프런트엔드 : Vue.js, ReactJS, JavaScript, jQuery
-- 백엔드: Spring Framework, MyBatis, JPA, Oracle SQL, Node.js, MySQL
+- 크로스플랫폼: React Native, Typescript, JavaScript, ionic, Capacitor
+- 프런트엔드 : Vue.js, ReactJS, Typescript, JavaScript, jQuery
+- 백엔드: Spring Framework, MyBatis, JPA, Oracle SQL, MSSQL, MySQL, Node.js, 웹스퀘어
 - DevOps 및 협업: Git, GitLab, JIRA, Confluence, Jenkins, Argo CD, 제니퍼, SVN
 - 데이터 분석 및 테스트: Python3, PySide6, PyQt
 ```
