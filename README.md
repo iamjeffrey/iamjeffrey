@@ -72,18 +72,16 @@
 </p>
 
 📊 **GitHub Statistics**
+
 <p align="center">
 <img height="165" src="https://github-readme-stats.vercel.app/api?username=iamjeffrey&show_icons=true&theme=tokyonight&hide_border=true" />
 <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=iamjeffrey&layout=compact&theme=tokyonight&hide_border=true" />
 </p>
 
 ## 💼 **Career**
-
 | Type | Period | Description |
 |:---:|:---:|:---:|
 | Software Development | 2002 ~ Present | Software & Application Development |
-
-
 
 
 # Webpack : migration v3 -> v4
