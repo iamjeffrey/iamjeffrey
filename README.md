@@ -71,8 +71,7 @@
 <img src="https://img.shields.io/badge/PyQt-41CD52?style=flat-square&logo=qt&logoColor=white" />
 </p>
 
-📊 GitHub Statistics
-
+📊 **GitHub Statistics**
 <p>
 <img height="165" src="https://github-readme-stats.vercel.app/api?username=iamjeffrey&show_icons=true&theme=tokyonight&hide_border=true" />
 <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=iamjeffrey&layout=compact&theme=tokyonight&hide_border=true" />
