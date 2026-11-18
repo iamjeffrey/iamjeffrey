@@ -42,7 +42,6 @@
 
 &emsp;&emsp;<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/PySide6-41CD52?style=flat-square&logo=qt&logoColor=white" /> <img src="https://img.shields.io/badge/PyQt-41CD52?style=flat-square&logo=qt&logoColor=white" />
 
-
 <br/>
 
 ## 📊 **GitHub Statistics**
@@ -51,7 +50,7 @@
 <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=iamjeffrey&layout=compact&theme=tokyonight&hide_border=true" />
 </p>
 
-## 💼 **Career**
+## 💼 **Career** 
 | Type | Period | Description |
 |:---:|:---:|:---:|
 | Software Development | 2002 ~ Present | Software & Application Development |
